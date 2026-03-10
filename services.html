@@ -1,0 +1,2383 @@
+<html class="no-js">
+
+<head>
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+
+    <!-- Shortcut Icon -->
+    <link rel="icon" type="image/png" href="img/logo.png">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>AI | Services&Products</title>
+
+    <!-- Mobile Specific Meta (Impresindible para vistas en móviles) -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- CSS Generales (Todas las páginas) -->
+    <link href="font/css/FontAll.min.css" rel="stylesheet">
+    <link href="css/bootstrap-4.4.1-css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.compat.css" rel="stylesheet">
+
+    <!-- CSS Generales (Todas las páginas) -->
+    <!-- Menú, Footer, Btn Flotantes, show -->
+    <link href="css/menu_footer_btnsFlotantes_show.min.css" rel="stylesheet">
+
+    <!-- Para sección "servicios y productos" -->
+    <link href="css/detail-services.min.css" rel="stylesheet">
+
+    <!-- Modificación al btn FAQs del footer" -->
+    <link href="css/updateFooter.min.css" rel="stylesheet">
+    
+    <!-- Para sección "Galería de Imágenes" -->
+    <link href="css/galleryImg.min.css" rel="stylesheet">
+
+    <!-- Iconos Evaluación (estrellas) -->
+    <link href="css/style.min.css"  rel="stylesheet">
+    
+    <!-- Personalizar tooltips -->
+    <link href="css/tooltips.min.css" rel="stylesheet">
+
+    <!-- Modernizer -->
+    <script src="js/modernizr3.6.0-min.js" type="text/javascript"></script>
+
+</head>
+
+<body id="body">
+
+    <!-- Btn Flotantes Whatsapp, Messenger, UpBtn y Tabs de servicios -->
+    <section id="stickyBtn">
+
+        <!-- Btn UP -->
+        <div id="id_stickyBtnUP" class="container-stickyBtnUP hide-stickyBtn">
+           <div class="scroll-container">
+               <a id="stickyBtn-UP" class="fas fa-chevron-up fa-lg select-text-fmenu-stickyBtn"></a>
+           </div>
+        </div> 
+
+        <!-- Btn WHATsAPP -->
+        <div id="id_stickyBtnWSP" class="container-stickyBtnWSP mostrar2">
+            <div class="scroll-container">
+                <a id="stickyBtn-WSP" class="select-text-fmenu-stickyBtn select-text-f d-flex align-items-center justify-content-center" tabindex="0" role="button" data-toggle="popover" title="" data-content=""><span class="fab fa-whatsapp fa-2x"></span></a>
+            </div>
+        </div> 
+
+        <!-- Btn MESSENGER -->
+        <div id="id_stickyBtnMsg" class="container-stickyBtnMsg mostrar2">
+            <div class="scroll-container">
+                <a id="stickyBtn-Msg" class="select-text-fmenu-stickyBtn select-text-f d-flex align-items-center justify-content-center" tabindex="0" role="button" data-toggle="popover" title="" data-content=""><span class="fab fa-facebook-messenger fa-2x"></span></a>
+            </div>
+        </div>  
+
+        <!-- Para mostrar messenger de facebook en PC -->
+        <!-- Messenger plugin del chat Code-->
+        <div id="fb-root" class="container-fb-root" style="z-index: 2000;"></div> 
+
+        <!-- Your plugin del chat code-->
+        <div id="fb-customer-chat" class="fb-customerchat" greeting_dialog_display="hide"></div>
+
+        <!------------------>
+        <!-- Tabs Buttons -->
+
+        <!-- Btn TAB1-Ingeniería -->
+        <div id="id_stickyBtnTAB1" class="container-stickyBtnTAB1" data-toggle="tooltip" data-placement="left" title="" data-original-title="Services and Products of UEB Engineering">
+            <div class="scroll-container">
+                <a onclick="activaTab('pills-ING')" id="stickyBtn-TAB1" class="select-text-fmenu-stickyBtn d-flex align-items-center justify-content-center"><span class="fas fa-lightbulb fa-1plusx"></span></a>
+            </div>
+        </div> 
+
+        <!-- Btn TAB2-Obras -->
+        <div id="id_stickyBtnTAB2" class="container-stickyBtnTAB2" data-toggle="tooltip" data-placement="left" title="" data-original-title="Services of UEB Civil and Refractory Works">
+            <div class="scroll-container">
+                <a onclick="activaTab('pills-OBRASC')" id="stickyBtn-TAB2" class="select-text-fmenu-stickyBtn d-flex align-items-center justify-content-center"><span class="fas fa-city fa-1plusx"></span></a>
+            </div>
+        </div> 
+
+        <!-- Btn TAB3-Estructuras -->
+        <div id="id_stickyBtnTAB3" class="container-stickyBtnTAB3" data-toggle="tooltip" data-placement="left" title="" data-original-title="Services of UEB Metallic Structures">
+            <div class="scroll-container">
+                <a onclick="activaTab('pills-ESTRUCT')" id="stickyBtn-TAB3" class="select-text-fmenu-stickyBtn d-flex align-items-center justify-content-center"><span class="fas fa-pallet fa-1plusx"></span></a>
+            </div>
+        </div> 
+
+        <!-- Btn TAB4-Productos -->
+        <div id="id_stickyBtnTAB4" class="container-stickyBtnTAB4" data-toggle="tooltip" data-placement="left" title="" data-original-title="Our Products">
+            <div class="scroll-container">
+                <a onclick="activaTab('pills-PRODUCTS')" id="stickyBtn-TAB4" class="select-text-fmenu-stickyBtn d-flex align-items-center justify-content-center"><span class="fas fa-box-open fa-1plusx"></span></a>
+            </div>
+        </div> 
+        
+    </section>
+    
+    <section id="Menu">
+
+        <div id="navigation" class="container-menu"> <!-- No recuerdo con que razón puse esta propiedad aquí style="z-index: 10000;" -->
+            
+             <!-- Menú superior Informativo -->
+             <div class="container-fluid header-top showFirstMenu">
+                <div class="row">
+                    <div class="col-md-9">
+                        <nav class="nav-contenedor-MenuTop">
+                            <div class="nav-enlace dropdown CustomTextMenuTop">
+
+                                <button id="dropdownMenu1" class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #606060; padding: 0px">
+                                    <span><i class="fas fa-phone-alt fa-lg"></i><span class="fontsizeMenuCustomItem">+53 76829761</span> <i id="dropdownMenu1-Icon" class="fas fa-chevron-down fa-sm"></i>
+                                </button>
+
+                                <div id="dropdownMenu1-List" class="dropdown-menu">
+                                    <div class="row style-plus_menuInfo">
+                                        <div class="col-md-12">
+
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <span class="dropdown-item style-InfoPhone">
+                                                                <ul class="list-unstyled"> 
+                                                                    <li>
+                                                                        <table class="table table-sm table-hover">
+                                                                            <thead class="thead-dark">
+                                                                            <tr>
+                                                                                <th scope="col">GENERAL MANAGEMENT</th>
+                                                                            </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                            <tr>
+                                                                                <td>(+53) 7682-9761</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>(+53) 7682-4287</td>
+                                                                            </tr> 
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </li>
+                                                                    
+                                                                </ul>                                           
+                                                            </span>
+                                                </div>
+
+                                                <div class="col-md-6" style="padding-left: 0px;">
+                                                    <span class="dropdown-item style-InfoPhone" style="padding-left: 0px;">
+                                                                <ul class="list-unstyled"> 
+                                                                    <li>
+                                                                        <table id="OthersPhone" class="table table-sm table-hover">                                                                   
+                                                                            <tbody>
+                                                                            <tr>
+                                                                                <th scope="row" class="wb">Engineering</th>
+                                                                                <td class="wb" style="width: 150px;">(+53) 7682-9454</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th scope="row">Structures</th>
+                                                                                <td style="width: 150px;">(+53) 7682-6829</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th scope="row">Construction Works</th>
+                                                                                <td style="width: 150px;">(+53) 7682-6196</td>
+                                                                            </tr>
+                                                                            
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </li>
+                                                                    
+                                                                </ul>                                           
+                                                            </span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <span class="dropdown-item">
+                                                        <ul class="list-unstyled"> 
+                                                            <li>
+                                                                <table class="table table-sm table-dark">
+                                                                    
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <th scope="col">To request any information you can call the Reception.</th>
+                                                                        <td>(+53) 7682-9761</td>
+                                                                    </tr>
+                                                                    
+                                                                    </tbody>
+                                                                </table>
+                                                            </li>
+                                                            
+                                                        </ul>                                           
+                                                    </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--<span class="nav-enlace CustomTextMenuTop"><i class="fas fa-envelope"></i> <span class="fontsizeMenuItem">Contacto</span></span>-->
+                            <span class="nav-enlace CustomTextMenuTop"><a href="https://www.google.com/maps/place/Acinox+Ingenier%C3%ADa/@23.037408,-82.26889,16z/data=!4m5!3m4!1s0x0:0x8456a13d0891c1a1!8m2!3d23.0374082!4d-82.2688896?hl=es" target="_blank" style="text-decoration:none;"><i class="fas fa-map-marker-alt" style="color: #606060;"></i> <span class="fontsizeMenuItem" style="color: #606060;">20th street no. 10522, Cotorro, Havana, Cuba</span></a></span>
+                        </nav>
+                    </div>
+                    <div class="col-md-3">
+
+                        <nav class="nav-contenedor-MenuTop">
+                            <span class="nav-enlace CustomTextMenuTop"><span class="fontsizeMenuCustomItem">follow us on:</span></span>
+                            <span class="nav-enlace CustomTextMenuTop"><a href="https://www.facebook.com/acinox.ingenieria.52" target="_blank"><i class="fab fa-facebook-f ajuste-icon" style="color: #606060;"></i></a></span>
+                            <span class="nav-enlace CustomTextMenuTop"><a href="https://twitter.com/AcinoxIngenier1" target="_blank"><i class="fab fa-twitter ajuste-icon" style="color: #606060;"></i></a></span>
+                        </nav>
+
+                    </div>
+                </div>
+             </div>
+
+            <!-- Menú superior Funcional -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark minWidth-Standar">
+                <div class="container-fluid">
+
+                <span class="justify-contentCustom">
+                    <span class="span_navbar-toggler">  
+                        <button class="navbar-toggler second-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
+                        </button>
+                    </span>
+
+                    <a class="navbar-brand logoFull" href="index">
+                        <img src="img/logo.png" width="35" height="40" class="d-inline-block align-top" alt="AI"> <span class="textLogoFull">ACINOXINGENIERĺA</span>
+                    </a>
+
+                    <a class="navbar-brand LogoMinimalista" href="index" style="vertical-align: super;">
+                        <img src="img/logo.png" width="30" height="35" class="d-inline-block align-top" alt="AI"> <span class="textLogoMinimal">ACINOXINGENIERĺA</span>
+                    </a>
+                </span>
+
+                <span class="showDropdown">
+                    <div class="btn-group">
+                        <button id="dropdownMenu2" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="fas fa-ellipsis-v" style="color: white;"></span>
+                        </button>
+
+                        <form id="dropdownMenu2_List" class="dropdown-menu dropdown-menu-right DropDownCustom_margintop2 show">
+                                                                    
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                   <a class="nav-link classplus active" id="pills-page-tab" style="transform: translateY(0px); padding: .15rem .5rem;" data-toggle="pill" href="#pills-page" role="tab" aria-controls="pills-page" aria-selected="true">Pages</a>
+                                </li>
+                                <li class="nav-item">
+                                   <a class="nav-link classplus" id="pills-info-tab" data-toggle="pill" href="#pills-info" role="tab" aria-controls="pills-info" aria-selected="false" style="transform: translateY(0px); border: 0px; padding: .15rem .5rem;">Info</a>
+                                </li>
+                                
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+
+                                <div class="tab-pane fade show active" id="pills-page" role="tabpanel" aria-labelledby="pills-page-tab">
+                                    
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <span id="spanContainer" class="dropdown-item seccion-redeSociales-menu3puntos">
+                                                <p class="text1insideMenu space-between-options"><a href="en" style="font-weight: lighter; margin-left: -1px; color: #2b2b2b;"><span class="fas fa-home fa-Ini fa-lg"></span> Home</a></p>
+                                                <p class="text1insideMenu space-between-options"><a href="enterprise" style="font-weight: lighter; padding-left: 1px; color: #2b2b2b;"><span class="fas fa-industry fa-industryIco"></span> Our Company</a></p>
+                                                <p class="text1insideMenu space-between-options"><a href="questions" style="font-weight: lighter; padding-left: 3px; color: #2b2b2b;"><span class="fas fa-question-circle fa-questionIco"></span> FAQs</a></p>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="tab-pane fade" id="pills-info" role="tabpanel" aria-labelledby="pills-info-tab">
+                                    
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <span class="dropdown-item">
+                                                <p class="text1insideMenu"><i class="fas fa-phone-alt"></i> Phones</p>
+                                                <p class="text2insideMenu"><strong>GENERAL MANAGEMENT</strong></p>
+                                                <p>
+                                                    <small>(+53) 76829761</small><br>
+                                                    <small>(+53) 76824287</small>
+                                                </p>
+                        
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <a class="dropdown-item" href="https://www.google.com/maps/place/Acinox+Ingenier%C3%ADa/@23.037408,-82.26889,16z/data=!4m5!3m4!1s0x0:0x8456a13d0891c1a1!8m2!3d23.0374082!4d-82.2688896?hl=es" target="_blank">
+                                                <p class="text1insideMenu"><i class="fas fa-map-marker-alt"></i> Address</p>
+                                                <p class="text2insideMenu"><strong></strong></p>
+                                                <p>
+                                                    <small>20th street no. 10522,</small><br>
+                                                    <small>Cotorro, Havana,</small><br>
+                                                    <small> Cuba</small>
+                                                </p>
+
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="dropdown-divider dropdown-dividerCustom"></div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <span class="dropdown-item seccion-redeSociales-menu3puntos" href="#" style="height: 102%;">
+                                                <p class="text1insideMenu"><strong>Follow us on:</strong></p>
+                                                <p class="text1insideMenu"><a href="https://www.facebook.com/acinox.ingenieria.52" target="_blank"><i class="fab fa-facebook-f ajuste-icon"></i> /acinox.ingenieria.52</a></p>
+                                                <p class="text1insideMenu"><a href="https://twitter.com/AcinoxIngenier1" target="_blank"><i class="fab fa-twitter ajuste-icon"></i> /AcinoxIngenier1</a></p>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            
+                            </div>
+                        
+                        </form>
+                    </div>
+                </span>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="dropdown-divider showDivider"></div>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a id="linkm0" class="nav-link btn-custom-text link-text-size select-text-fmenu">Info</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="linkm1" class="nav-link link-text-size select-text-fmenu">Hire</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="linkm2" class="nav-link link-text-size select-text-fmenu">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="linkm3" class="nav-link link-text-size select-text-fmenu">Catalogue</a>
+                        </li>
+
+                        <!-- Para que aparescan los enlaces a las otras páginas -->
+                        <li class="nav-item otherPages">
+                            <hr class="otherPages" style="background: #7e7e7e; margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                        </li>
+                       
+                        <!-- btn pages -->
+                        <li class="nav-item otherPages">
+                        <a id="link5" href="en" style="font-weight: lighter;" class="nav-link link-text-size select-text-fmenu"><span class="fas fa-home fa-ServProdIco"></span> Home <span class="badge badge-danger" style="background:#c5452e; font-size: 0.7rem; font-weight: normal;">page</span></a>
+                        </li>
+                        <li class="nav-item otherPages">
+                            <a id="link6" href="enterprise" style="font-weight: lighter;" class="nav-link link-text-size select-text-fmenu"><span  class="fas fa-industry fa-questionIco"></span> Our Company <span class="badge badge-danger" style="background:#c5452e; font-size: 0.7rem; font-weight: normal;">page</span></a>
+                        </li>
+                        <li class="nav-item otherPages" style="margin-bottom: 7px;">
+                            <a id="link7" href="questions" style="font-weight: lighter;" class="nav-link link-text-size select-text-fmenu"><span  class="fas fa-question-circle fa-questionIco"></span> FAQs <span class="badge badge-danger" style="background:#c5452e; font-size: 0.7rem; font-weight: normal;">page</span></a>
+                        </li>
+
+                        <!-- btn pages -->
+                        <li id="Link-dropd3" class="nav-item dropdown">
+                            
+                            <a id="dropdownMenu113" class="nav-link link-text-size select-text-fmenu btn btn-danger dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="btn-menu-page">Pages <i id="dropd-pages-Icon3" class="fas fa-chevron-down fa-sm"></i>
+                            </a>
+                            <div id="dropd_List3" class="dropdown-menu dropdown-menu-right btn-menu-page-List">
+                                <a class="dropdown-item" href="en" style="font-weight: lighter; padding-left: 22px;"><span class="fas fa-home fa-Ini fa-lg"></span> Home</a>
+                                <a class="dropdown-item" href="enterprise" style="font-weight: lighter; padding-left: 27px;"><span class="fas fa-industry fa-industryIco"></span> Our Company</a>
+                                <a class="dropdown-item" href="questions" style="font-weight: lighter; padding-left: 26px;"><span  class="fas fa-question-circle fa-questionIco"></span> FAQs</a>
+                            </div>
+
+                        </li>
+                        
+                    </ul>
+                </div>
+                </div>
+
+            </nav>
+            
+            <!-- BTN Idiomas -->
+            <div class="">
+                <div class="btn-group btn_language" style="display: block;">
+
+                    <a class="btn btn_custom_format txt_format language-selected" type="button" href="servicios" style="background: #f0f0f0;border: 1px solid #f0f0f0;color: #818181; box-shadow: none;  z-index: 1;"> ESP</a>
+                    <span class="btn btn_custom_format2 txt_format language-notselected" style="background: #c5452e;border: 0px;color: white; cursor: auto;  z-index: 1;"> <i class="fa fa-check-circle"></i> ENG</span>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="page sp-p">
+
+        <div class="content">
+
+            <!-- Sección Banner de página -->
+            <div id="csp" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-interval="0" style="background-color: #c5452e;">
+                      <img src="img/sp/banner-pServProd.png" class="d-block w-100 img-fluid" alt="top Banner">
+                      <div class="carousel-caption d-none d-md-block positionCapt">
+                        <div class="sub-banner-custom wow animated zoomIn">
+                           <h1 class="display-41">#Wide range of Services</h1>
+                           <p class="lead l-banner">Varied offer, competitive prices, seriousness and efficiency.</p>
+                        </div>
+                     </div>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Sección Links -->
+            <section id="Links-Breadcrumb">
+                <div class="ds-style1">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item bm"><a href="en"><span class="fas fa-home fa-lg"></span> Home</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">
+
+                              <!-- Menú accesos a lista de páginas del sitio -->
+                              <button id="dropdownMenu3" class="btn btn-secondary dropdown-toggle bm2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #606060;">
+                                <div id="MDPage" data-toggle="tooltip" data-placement="top" title="" data-original-title="Menu">
+                                    <span><span class="fontsizeMenuCustomItem-dsp" style="line-height: 1; font-weight: lighter;">Services & Products</span> <i id="dropdownMenu3-Icon" class="fas fa-chevron-circle-left" style="color: #c5452e;"></i>
+                                </div>
+                              </button>
+                              <div id="dropdownMenu3-List" class="dropdown-menu dropdown-menu-right btn-menu-page-List">
+                                <a class="dropdown-item" href="enterprise" style="font-weight: lighter; padding-left: 27px;"><span class="fas fa-industry fa-industryIco"></span> Our Company</a>
+                                <a class="dropdown-item" href="questions" style="font-weight: lighter; padding-left: 26px;"><span  class="fas fa-question-circle fa-questionIco"></span> FAQs</a>
+                              </div>
+                              
+                          </li>
+                        </ol>
+                    </nav>
+                </div>       
+            </section>
+
+            <!-- Section: Encabezado de Servicios y Productos -->
+            <section id="Head-page2">
+                <div class="d-flex justify-content-around align-items-start minWidth-Standar-detail-services e-p-c2">
+                    <div class="container">
+                        <div class="row wow animated fadeIn" data-wow-delay="0.3s">
+    
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5">
+                                <img src="img/iconos/servicios-productos.png" class="img-fluid rounded mx-auto d-block i-m i-w" alt="Page header image"/>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-7 p-lr">
+                                <h2>Our offers</h2>
+                                <p class="lead font-weight-lighter text-justify e-p-c">
+                                    We have a wide range of services and products that we make available
+                                    of our clients and that are distributed in the three productive Base Business Units (UEB)
+                                    of the company: 
+                                    <span class="style-span-sp">
+                                        <strong>Civil and Refractory Works, Engineering and Metallic Structures.</strong>
+                                    </span>
+                                </p>
+    
+                                <div class="row">
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-center">
+                                        
+                                        <div class="card-group">
+                                            <div class="card e-card-c1 e-card-color1">
+                                              <div class="card-body e-cardBody-c1">
+                                                <h1 class="display-1 text-center align-middle" style="color:#fff;">2</h1>
+                                              </div>
+                                            </div>
+                                            <div class="card e-card-c2">
+                                              <div class="card-body d-flex align-items-center">
+                                                <div>
+                                                    <h1 class="card-title e-cardTitle-c">PRO</h1>
+                                                    <h5 class="card-subtitle mb-2 text-muted e-h5-c">DUCTS</h5>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-center">
+                                        
+                                        <div class="card-group">
+                                            <div class="card e-card-c1 e-card-color2">
+                                                <div class="card-body e-cardBody-c3">
+                                                   <h1 class="display-1 text-center align-middle" style="color:#2b2b2b;">7</h1>
+                                                </div>
+                                            </div>
+                                            <div class="card e-card-c2">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <h5 class="card-title e-cardTitle-c2">CATEGORIES</h5>
+                                                        <h5 class="card-subtitle text-muted e-h5-c e-cardTitle-c2">SERVICES</h5>
+                                                        <h6 class="card-subtitle mb-2 ico-list-s-color e-text-c">TO THE CLIENT</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+    
+                            </div>
+                            
+                             
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- ¿Quienes pueden contratar nuestros servicios? -->
+            <section id="Contract">
+                <div class="ds-block minWidth-Standar-detail-services e-p-c22">
+                    <div class="container">
+    
+                        <!-- Encabezado -->
+                        <div class="heading head sub-c" style="text-align:center;">
+                            <h2>Who can<span class="style_header"> hire our Services?</span></h2>
+                        </div>
+                        
+                        <!-- BODY -->
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
+                                <div class="card-deck">
+                                    <div class="card max-w-c">
+                                      <div class="card-body d-flex justify-content-center" style="background: #eaeaea;">
+                                         <div>
+                                            <span class="fas fa-industry fa-4x"></span> <span class="fas fa-check fa-lg"></span>
+                                            <h5 class="card-title e-text-c f-ico-ct">STATE</h5>
+                                            <p class="card-text">COMPANIES</p>
+                                         </div>
+                                      </div>
+                                    </div>
+                                    <div class="card max-w-c">
+                                      <div class="card-body hlight-ico d-flex justify-content-center">
+                                        <div>
+                                            <span class="fas fa-users fa-4x"></span> <span class="fas fa-check-double fa-2x"></span>
+                                            <h5 class="card-title e-text-c f-ico-ct">MIPYMES and COOPERATIVES</h5>
+                                            <p class="card-text">ALL TYPES</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="card max-w-c">
+                                      <div class="card-body d-flex justify-content-center" style="background: #eaeaea;">
+                                         <div>
+                                            <span class="fas fa-user-tie fa-4x"></span> <span class="fas fa-check fa-lg"></span> 
+                                            <h5 class="card-title e-text-c f-ico-ct">SELF-EMPLOYED</h5>
+                                            <p class="card-text">WORKERS</p>
+                                         </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Sección "Detalle de Servicios" -->
+            <section id="detail-services" class="ds-block minWidth-Standar-detail-services">
+
+                <!-- Encabezado -->
+                <div class="heading head">
+                    <h2>Detail of <span class="style_header">Services and Products</span></h2>
+                </div>
+
+                <!-- BODY -->
+                <div class="container">
+
+                    <!-- Promo de CATALOGO -->
+                    <div class="card f3">
+                        <div class="card-body info-custom alert-warning" style="background-color: #f0f0f0;color: #2b2b2b;">
+
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                    <h5 class="card-title" style="margin-bottom: 0px; font-weight: bold;"><span class="fas fa-book-reader fa-3x" style="margin-right: 7px;"></span> <span class="badge badge-dark" style="background-color: #c5452e; font-weight: 600;"> UPDATED EDITION!</span></h5>
+                                </div>
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 d-flex align-items-center"> 
+                                    <p class="card-text lead1" style="margin-bottom: 15px;">
+                                        <span><STRONG class="display-6">CATALOG OF PRODUCTS AND SERVICES.</STRONG></span><br>
+                                        <br style="line-height: .5;">
+                                        <span class="lead text-justify style8" style="line-height: 1.2;">Available for printing in .PDF format and also as a mobile application.</span>
+                                    </p>
+                                </div>
+
+                                <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 d-flex align-items-center"> 
+                                    <p class="card-text lead1" style="margin-bottom: 7px;">
+                                        <a id="btn-cat" class="btn btn-dark select-text-fmenu" role="button" style="color: #fff;">more details</a>
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="layer1">
+
+                    <!-- Tab de selección de servicios -->
+                    <ul class="nav nav-pills mb-3 nav-justified" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                          <div id="IdTAB1" data-toggle="tooltip" data-placement="top" title="" data-original-title="Services and Products of UEB Engineering">
+                            <a onclick="activaTab('pills-ING')" class="nav-link active" id="pills-ING-tab" data-toggle="pill" href="#pills-ING" role="tab" aria-controls="pills-ING" aria-selected="true"><span class="fas fa-lightbulb fa-2x"></span> <span class="h5 nav-text-ico">ENGINEERING</span></a>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                           <div id="IdTAB2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Services of UEB Civil and Refractory Works">
+                             <a onclick="activaTab('pills-OBRASC')" class="nav-link" id="pills-OBRASC-tab" data-toggle="pill" href="#pills-OBRASC" role="tab" aria-controls="pills-OBRASC" aria-selected="false"><span class="fas fa-city fa-2x"></span> <span class="h5 nav-text-ico">CIVIL WORKS</span></a>
+                           </div>
+                        </li>
+                        <li class="nav-item">
+                            <div id="IdTAB3" data-toggle="tooltip" data-placement="top" title="" data-original-title="Services of UEB Metallic Structures">
+                                <a onclick="activaTab('pills-ESTRUCT')" class="nav-link" id="pills-ESTRUCT-tab" data-toggle="pill" href="#pills-ESTRUCT" role="tab" aria-controls="pills-ESTRUCT" aria-selected="false"><span class="fas fa-pallet fa-2x"></span> <span class="h5 nav-text-ico">STRUCTURES</span></a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div id="IdTAB4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Our Products">
+                                <a onclick="activaTab('pills-PRODUCTS')" class="nav-link" id="pills-PRODUCTS-tab" data-toggle="pill" href="#pills-PRODUCTS" role="tab" aria-controls="pills-PRODUCTS" aria-selected="false"><span class="fas fa-box-open fa-2x"></span> <span class="h5 nav-text-ico">PRODUCTS</span></a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <div class="tab-content" id="pills-tabContent">
+
+                        <!-- 1.UEB Ingeniería -->
+                        <div class="tab-pane fade show active" id="pills-ING" role="tabpanel" aria-labelledby="pills-ING-tab1">
+                            
+                            <!-- Promo 
+                            <div class="card promo-style1" style="border: none; margin-bottom: 0.7rem;">
+                                <div class="card-body" style="background-color: #fff0c4; border-radius: .25rem; padding-bottom: 0.1rem; padding-top: 0.7rem;">
+                                    <h3 class="card-title" style="color: #2B2B2B; margin-bottom: 0.3rem;">¡NUEVO! <span class="fas fa-angle-double-right fa-lg"></span> <strong style="font-weight: bold;">CONTRATOS </strong>EN CUP Y <strong style="font-weight: bold; color: #c5452e;">USD</strong> <span class="fas fa-check-circle" style="color:#c5452e"></span> <span class="fas fa-angle-double-left fa-lg"></span></h3>
+                                    <h5 class="card-title" style="color: #2B2B2B; margin-bottom: 0.7rem;"><strong style="font-weight: bold;">AHORA</strong> Los servicios de la UEB INGENIERÍA podrán contratarse también en <strong>USD</strong>.</h5>
+                                </div>
+                            </div>-->
+
+                            <!-- Info de contacto -->
+                            <div class="card f">
+                                <div class="card-body info-custom">
+
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                            <h5 class="card-title" style="margin-bottom: 0px; font-weight: bold;"><span class="fas fa-exclamation-triangle ico-list-s-color"></span> CONTACT INFORMATION</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                            <p class="card-text lead1 text-justify" style="margin-bottom: 7px;">To request information or contract services from <STRONG>UEB ENGINEERING</STRONG> do it through this contact.</p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                            <h5 class="card-title" style="font-weight: 500;">UEB ENGINEERING Director </h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">Ing. Héctor de León Cabrera</h6>
+                                        </div>
+
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                            <p class="card-text">
+                                                <span class="fas fa-phone"></span> (+53) 52099963 <br>  
+                                                </span><span class="fas fa-envelope"></span> <span class="email-t-s">dir_proyectos@acingeconst.co.cu</span>
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div id="TAB1-ING" class="card">
+
+                                <!-- Encabezado TAB -->
+                                <div class="card-header card-h-show">
+        
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-left ">
+                                            <span class="card-h-t">ENGINEERING</span>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-right">
+                                            <span><strong>(4)</strong> categories</span>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                                
+                                <!-- Servicios de UEB Ingeniería -->
+                                <div class="card-body" style="background: #f7f7f7c7;">
+
+                                <!-- no.1 -->
+                                <h4 class="card-title"><span class="fas fa-clipboard-check fa-lg"></span> FEASIBILITY STUDIES</h4>
+                                <span class="badge badge-dark"><span class="fas fa-dollar-sign"></span> CUSTOM PRICES</span>
+                                <div class="table-responsive-md">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                            <th class="th-c" scope="col">List of Services</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> <span class="display-5"><span class="fas fa-chevron-circle-right"></span> #Study of Opportunities, Prefeasibility and Feasibility.</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+        
+                                <hr>
+                                <!-- no.2 -->
+                                <h4 class="card-title"><span class="fas fa-users-cog fa-lg"></span> TECHNICAL ASSISTANCE</h4>
+                                <span class="badge badge-dark"><span class="fas fa-dollar-sign"></span> CUSTOM PRICES</span>
+                                <div class="table-responsive-md">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                            <th class="th-c" scope="col">List of Services</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td> <span class="display-5"><span class="fas fa-chevron-circle-right"></span> #Construction, assembly and commissioning of incinerators.</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td> <span class="display-5"><span class="fas fa-chevron-circle-right ico-list-s-color"></span> #Study of load and capacity for the Industry.</span></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                    
+                                <hr>
+                                <!-- no.3 -->
+                                <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                            <h4 class="card-title"><span class="fas fa-laptop-code fa-lg"></span> INFORMATICS</h4>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                            <span class="badge badge-dark"><span class="fas fa-dollar-sign"></span> CUSTOM PRICES</span>
+                                            <div class="table-responsive-md">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                        <th class="th-c" scope="col">List of Services</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td> <span class="display-5"><span class="badge badge-danger"><span class="fas fa-chevron-circle-right"></span> <span class="b-fc">¡NEW!</span></span> #Development of tailor-made MANAGEMENT and CONTROL computer applications.</span></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                        </div>
+                                </div>
+        
+                                <hr>
+                                <!-- no.4 -->
+                                <h4 class="card-title"><span class="fas fa-project-diagram fa-lg"></span> CIVIL, NETWORKS AND MECHANICAL</h4>
+                                <span class="badge badge-dark"><span class="fas fa-dollar-sign"></span> CUSTOM PRICES</span>
+                                <div class="table-responsive-md">
+                                    <table class="table">
+                                        <thead >
+                                            <tr>
+                                            <th class="th-c" scope="col">List of Services</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td> <span class="display-5"><span class="fas fa-chevron-circle-right"></span> #Topographical and architectural survey for the elaboration of the General Plan.</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td> <span class="display-5"><span class="fas fa-chevron-circle-right ico-list-s-color"></span> #Preparation of project documentation for:</span></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="card-text">
+                                    <div class="jumbotron" style="background-color: #e1e1e1;">
+                                        <p class="lead">
+                                            <span class="span-c2"> Earthworks</span> |
+                                            <span class="span-c2"> Vials</span> |
+                                            <span class="span-c3"> Architecture</span> |
+                                            <span class="span-c2"> Structural</span> |
+                                            <span class="span-c2"> Hydraulic and Sanitary Installations</span> |
+                                            <span class="span-c4"> Mechanics</span> |
+                                            <span class="span-c2"> Fuel Storage and Supply</span> |
+                                            <span class="span-c2"> Ventilation and Extraction Systems</span> |
+                                            <span class="span-c2"> Refrigeration Systems</span> |
+                                            <span class="span-c2"> Gas and Dust Extraction Systems</span> |
+                                            <span class="span-c2"> Hydraulic systems</span> |
+                                            <span class="span-c2"> Cooling towers</span> |
+                                            <span class="span-c5"> Electroenergetic</span> |
+                                            <span class="span-c2"> Work Organization</span>   
+                                        </p>  
+                                    </div>
+                                </p>
+        
+                                </div>
+
+                            </div>
+
+                        </div>
+                        
+                        <!-- 2.UEB Obras -->
+                        <div class="tab-pane fade" id="pills-OBRASC" role="tabpanel" aria-labelledby="pills-OBRASC-tab1">
+    
+                            <!-- Info de contacto -->
+                            <div class="card f">
+                                <div class="card-body info-custom">
+
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                            <h5 class="card-title" style="margin-bottom: 0px; font-weight: bold;"><span class="fas fa-exclamation-triangle ico-list-s-color"></span> CONTACT INFORMATION</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                            <p class="card-text lead1 text-justify" style="margin-bottom: 7px;">To request information or contract services of the <STRONG>UEB CIVIL AND REFRACTORY WORKS</STRONG> do it through this contact.</p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                            <h5 class="card-title" style="font-weight: 500;">UEB Civil and Refractory Works Director</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">Tec. Daymaris Gamboa Yin</h6>
+                                        </div>
+
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                            <p class="card-text">
+                                                <span class="fas fa-phone"></span> (+53) 59933394 <br>  
+                                                </span><span class="fas fa-envelope"></span> <span class="email-t-s">dir_tobras@acingeconst.co.cu</span>
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div id="TAB2-OBRAS" class="card">
+                                <!-- Encabezado -->
+                                <div class="card-header card-h-show">
+        
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-left ">
+                                            <span class="card-h-t">CIVIL WORKS</span>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-right">
+                                            <span><strong>(2)</strong> categories</span>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+
+                                <!-- Servicios de UEB Obras -->
+                                <div class="card-body" style="background: #f7f7f7c7;">
+
+                                <!-- no.1 -->
+                                <h4 class="card-title"><span class="fas fa-store-alt fa-lg"></span> INDUSTRIAL ASSEMBLY</h4>
+                                <span class="badge badge-dark"><span class="fas fa-dollar-sign"></span> CUSTOM PRICES</span>
+                                <div class="table-responsive-md">
+                                    <table class="table">
+                                        <thead >
+                                            <tr>
+                                            <th class="th-c" scope="col">List of Services</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td> <span class="display-5"><span class="fas fa-chevron-circle-right"></span> #Placement, repair, reinforcement and waterproofing of roofs.</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td> <span class="display-5"><span class="fas fa-chevron-circle-right ico-list-s-color"></span> #Works with aluminum marquetry, light paneling and plasterboard.</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td> <span class="display-5"><span class="fas fa-chevron-circle-right"></span> #False ceiling installation.</span></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <span class="fas fa-check-double fa-lg" style="color: #c5452e; margin-right: 5px;"> </span><a href="img/galeria/Servicios/1/amp/s1-amp.jpg" data-fancybox="gallery2" data-type="image" data-thumb="img/galeria/Servicios/1/s1.jpg" data-caption="False ceiling mounting" class="btn btn-outline-dark btn-sm style17"><span class="fas fa-camera fa-lg"></span> SEE GALLERY</a> 
+                                
+                                <!-- Galería de imagenes #2 OCULTA-->
+                                <div style="display: none;">
+
+                                    <a href="img/galeria/Servicios/1/amp/s2-amp.jpg" data-fancybox="gallery2" data-type="image" data-thumb="img/galeria/Servicios/1/s2.jpg" data-caption="Aluminum marquetry for plasterboard assembly"></a>
+                                    <a href="img/galeria/Servicios/1/amp/s3-amp.jpg" data-fancybox="gallery2" data-type="image" data-thumb="img/galeria/Servicios/1/s3.jpg" data-caption="Finished work with its finish (luminaires, electrical panels, false ceiling, plasterboard walls, aluminum carpentry, floor tiles and paint"></a>
+                                    
+                                </div>
+                                
+        
+                                <hr>
+        
+                                <!-- no.2 -->
+                                <h4 class="card-title"><span class="fas fa-layer-group fa-lg"></span> CIVIL AND REFRACTORY WORKS</h4>
+                                <span class="badge badge-dark"><span class="fas fa-dollar-sign"></span> CUSTOM PRICES</span>
+                                <div class="table-responsive-md">
+                                    <table class="table">
+                                        <thead >
+                                            <tr>
+                                            <th class="th-c" scope="col">List of Services</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td> <span class="display-5"><span class="fas fa-chevron-circle-right"></span> #Civil and refractory masonry service.</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td> <span class="display-5"><span class="fas fa-chevron-circle-right ico-list-s-color"></span> #Plumbing service.</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td> <span class="display-5"><span class="fas fa-chevron-circle-right"></span> #Electric service.</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td> <span class="display-5"><span class="fas fa-chevron-circle-right ico-list-s-color"></span> #Surface preparation service and application of paints, lacquers and varnishes.</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td> <span class="display-5"><span class="fas fa-chevron-circle-right"></span> #Repair and maintenance service for solid waste incinerators from crematoria and ovens for: <strong>Electric arc</strong>, <strong>tubular</strong>, <strong>rotary</strong> and <strong>methodical among others</strong>.</span></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <span class="fas fa-check-double fa-lg" style="color: #c5452e; margin-right: 5px;"> </span><a href="img/galeria/Servicios/2/amp/s2-1-amp.jpg" data-fancybox="gallery3" data-type="image" data-thumb="img/galeria/Servicios/2/s2-1.jpg" data-caption="Concrete lining on the inner wall of an incinerator" class="btn btn-outline-dark btn-sm style17"><span class="fas fa-camera fa-lg"></span> SEE GALLERY</a> 
+                                
+                                <!-- Galería de imagenes #3 OCULTA-->
+                                <div style="display: none;">
+
+                                    <a href="img/galeria/Servicios/2/amp/s2-2-amp.jpg" data-fancybox="gallery3" data-type="image" data-thumb="img/galeria/Servicios/2/s2-2.jpg" data-caption="Masonry works in civil works"></a>
+                                    <a href="img/galeria/Servicios/2/amp/s2-3-amp.jpg" data-fancybox="gallery3" data-type="image" data-thumb="img/galeria/Servicios/2/s2-3.jpg" data-caption="Refractory masonry works in the main combustion chamber of an incinerator"></a>
+                                    
+                                </div>
+                                
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <!-- 3.UEB Estructuras -->
+                        <div class="tab-pane fade" id="pills-ESTRUCT" role="tabpanel" aria-labelledby="pills-ESTRUCT-tab1">
+    
+                            <!-- Promociones -->
+                            <div class="row">
+
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                        <div class="card promo-style1" style="border: none; margin-bottom: 0.7rem;">
+                                            <div class="card-body" style="background-color: #fff0c4; border-radius: .25rem;">
+                                                <h3 class="card-title" style="color: #2b2b2b;"><span class="fas fa-angle-double-right fa-lg"></span> WE MAKE A <strong style="font-weight: bold;">% </strong> <strong style="font-weight: bold; color: #c5452e;">DISCOUNT</strong> <span class="fas fa-check-circle" style="color:#c5452e"></span> <span class="fas fa-angle-double-left fa-lg"></span></h3>
+                                                <h5 class="card-title" style="color: #2b2b2b;"><strong style="font-weight: bold;">ONLY</strong> for clients who have the necessary materials to carry out the requested work, establishing prior agreements between the parties.</h5>
+                                            </div>
+                                        </div> 
+                                    </div>
+
+                            </div> 
+
+                            <!-- Info de contacto -->
+                            <div class="card f">
+                                <div class="card-body info-custom">
+
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                            <h5 class="card-title" style="margin-bottom: 0px; font-weight: bold;"><span class="fas fa-exclamation-triangle ico-list-s-color"></span> CONTACT INFORMATION</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                            <p class="card-text lead1 text-justify" style="margin-bottom: 7px;">To request information or contract services of the <STRONG>UEB METALLIC STRUCTURES</STRONG> do it through this contact.</p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                            <h5 class="card-title" style="font-weight: 500;">UEB Metallic Structures Director </h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">Lic. Iris Cuellar López</h6>
+                                        </div>
+
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                            <p class="card-text">
+                                                <span class="fas fa-phone"></span> (+53) 52110727 <br>  
+                                                </span><span class="fas fa-envelope"></span> <span class="email-t-s">dir_estructura@acingeconst.co.cu</span>
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div id="TAB3-ESTRUCT" class="card">
+
+                                <!-- Encabezado -->
+                                <div class="card-header card-h-show">
+        
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-left ">
+                                            <span class="card-h-t">METALLIC STRUCTURES</span>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-right">
+                                            <span><strong>(1)</strong> category</span>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+
+                                <!-- Servicios de UEB Estructuras -->
+                                <div class="card-body" style="background: #f7f7f7c7;">
+
+                                <!-- no.1 -->
+                                <h4 class="card-title"><span class="fas fa-people-carry fa-lg"></span> MANUFACTURING, ASSEMBLY AND MACHINING</h4>
+                                <span class="badge badge-dark"><span class="fas fa-dollar-sign"></span> CUSTOM PRICES</span>
+                                <div class="table-responsive-md">
+                                    <table class="table">
+                                        <thead >
+                                            <tr>
+                                            <th class="th-c" scope="col">List of Services</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td> <span class="display-5"><span class="fas fa-chevron-circle-right"></span> #Metal bar cutting and shaping services.</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td> <span class="display-5"><span class="fas fa-chevron-circle-right ico-list-s-color"></span> #Manufacture of: Ovens, Metal doors, Fence cloths,
+                                                Louvers, Lattices, Eaves, Rail Support Beams and Columns.</span></td>
+                                        </tr>
+                                        
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <span class="fas fa-check-double fa-lg" style="color: #c5452e; margin-right: 5px;"> </span><a href="img/galeria/Servicios/3/amp/s3-1-amp.jpg" data-fancybox="gallery4" data-type="image" data-thumb="img/galeria/Servicios/3/s3-1.jpg" data-caption="Construction of eaves for interiors and exteriors for industrial buildings" class="btn btn-outline-dark btn-sm style17" style="margin-bottom: 10px;"><span class="fas fa-camera fa-lg"></span> SEE GALLERY</a> 
+                                
+                                <!-- Galería de imagenes #4 OCULTA-->
+                                <div style="display: none;">
+
+                                    <a href="img/galeria/Servicios/3/amp/s3-2-amp.jpg" data-fancybox="gallery4" data-type="image" data-thumb="img/galeria/Servicios/3/s3-2.jpg" data-caption="Perimeter fencing of facilities"></a>
+                                    <a href="img/galeria/Servicios/3/amp/s3-3-amp.jpg" data-fancybox="gallery4" data-type="image" data-thumb="img/galeria/Servicios/3/s3-3.jpg" data-caption="Rail-bearing beams for industrial buildings"></a>
+                                    
+                                </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- 4.Productos -->
+                        <div class="tab-pane fade" id="pills-PRODUCTS" role="tabpanel" aria-labelledby="pills-PRODUCTS-tab1">
+    
+                            <div id="TAB4-PRODUCT" class="card">
+                                <!-- Encabezado -->
+                                <div class="card-header card-h-show">
+        
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-left ">
+                                            <span class="card-h-t">PRODUCTS</span>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-right">
+                                            <span><strong>(2)</strong> types of products</span>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+
+                                <!-- Productos Comercializables Acinox -->
+                                <div class="card-body" style="background: #f7f7f7c7;">
+        
+                                <!-- no.1 -->
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                        <h4 class="card-title m-c-sp" style="margin-bottom: 7px;">Product no.1 <i class="fa fa-fire-alt fa-flip-horizontal fa-lg"></i> <strong>INCINERATOR </strong></h4>
+                                        <p class="p-d" style="line-height: 0.2; padding-bottom: 7px;">
+                                            <span class="rating-c-sp" style="display:none;">
+                                                <span class="icon-star eval-size-star-sp eval-color-star-sp "></span>
+                                                <span class="icon-star eval-size-star-sp eval-color-star-sp "></span>
+                                                <span class="icon-star eval-size-star-sp eval-color-star-sp "></span>
+                                                <span class="icon-star eval-size-star-sp eval-color-star-sp "></span>
+                                                <span class="icon-star-half-empty eval-size-star-sp eval-color-star-sp"></span>
+                                                <span class="eval-size-sp"> (4.7)</span>
+                                            </span><br>
+                                            <a style="text-decoration: none; line-height: 2.5;" href="descargar.php?archivo=InfoPromo-ACINOX-Incinerador.pdf"><small class="text-muted"><span class="fas fa-file-pdf fa-2x"></span> <span class="customText">DOWNLOAD | <span style="color:black ;"><strong>INCINERATOR Info</strong></span></span></small> <small class="text-muted"></small></a>
+                                            <small class="text-muted"><em>(Available <strong style="color:gray;">ONLY</strong> in Spanish)</em></small>
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                                <!-- Promo -->
+                                <div class="card promo-style1" style="border: none; margin-bottom: 0.7rem; display: none;">
+                                    <div class="card-body" style="background-color: #fff0c4; border-radius: .25rem; padding-bottom: 0.1rem; padding-top: 0.7rem;">
+                                        <h3 class="card-title" style="color: #2B2B2B; margin-bottom: 0.3rem;">¡NUEVO! <span class="fas fa-angle-double-right fa-lg"></span> <strong style="font-weight: bold;">CONTRATOS </strong>EN CUP Y <strong style="font-weight: bold; color: #c5452e;">USD</strong> <span class="fas fa-check-circle" style="color:#c5452e"></span> <span class="fas fa-angle-double-left fa-lg"></span></h3>
+                                        <h5 class="card-title" style="color: #2B2B2B; margin-bottom: 0.7rem;"><strong style="font-weight: bold;">AHORA</strong> La contratación del producto podrá realizarse también en <strong>USD</strong>.</h5>
+                                    </div>
+                                </div>
+
+                                <!-- Info de contacto -->
+                                <div class="card f">
+                                    <div class="card-body info-custom">
+
+                                        <div class="row">
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                                <h5 class="card-title" style="margin-bottom: 0px; font-weight: bold;"><span class="fas fa-exclamation-triangle ico-list-s-color"></span> CONTACT INFORMATION</h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                                <p class="card-text lead1 text-justify" style="margin-bottom: 7px;">To request information or contract services of <STRONG>CONSTRUCTION, ASSEMBLY, REPAIR OR MAINTENANCE OF INCINERATORS</STRONG> do it through this contact.</p>
+                                            </div>
+                                        </div>
+    
+                                        <div class="row">    
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                                <h5 class="card-title" style="font-weight: 500;">Principal Technical Assistance Specialist</h5>
+                                                <h6 class="card-subtitle mb-2 text-muted">Ing. Vicente R. Jones Morrinson</h6>
+                                            </div>
+    
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                                <p class="card-text">
+                                                    <span class="fas fa-phone"></span> (+53) 52097699 <br>  
+                                                    </span><span class="fas fa-envelope"></span> <span class="email-t-s">vicente@acingeconst.co.cu</span>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <!-- Carrusel de imagenes del producto -->
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+
+                                        <div id="carouselIncineradores" class="carousel slide" data-ride="carousel" data-interval="0">
+                                            <ol class="carousel-indicators">
+                                            <li data-target="#carouselIncineradores" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carouselIncineradores" data-slide-to="1"></li>
+                                            <li data-target="#carouselIncineradores" data-slide-to="2"></li>
+                                            <li data-target="#carouselIncineradores" data-slide-to="3"></li>
+                                            <li data-target="#carouselIncineradores" data-slide-to="4"></li>
+                                            <li data-target="#carouselIncineradores" data-slide-to="5"></li>
+                                            <li data-target="#carouselIncineradores" data-slide-to="6"></li>
+                                            <li data-target="#carouselIncineradores" data-slide-to="7"></li>
+                                            <li data-target="#carouselIncineradores" data-slide-to="8"></li>
+                                            </ol>
+                                            <div class="carousel-inner">
+
+                                            <div class="carousel-item active">
+                                                <img class="d-block w-100 img-thumbnail" src="img/sp/prod-Inic/inc1c.jpg" alt="First slide">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <div style="background: #ffffff40;padding-top: 1rem;padding-bottom: 0.1rem;">
+                                                        <h5 style="color: black;">VIEW no.1</h5>
+                                                        <p style="color: black;">Combustion chamber.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100 img-thumbnail" src="img/sp/prod-Inic/inc2c.jpg" alt="Second slide">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <div style="background: #ffffff40;padding-top: 1rem;padding-bottom: 0.1rem;">
+                                                        <h5 style="color: black;">VIEW no.2</h5>
+                                                        <p style="color: black;">Combustion chamber.</p>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100 img-thumbnail" src="img/sp/prod-Inic/inc3c.jpg" alt="Third slide">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <div style="background: #ffffff40;padding-top: 1rem;padding-bottom: 0.1rem;">
+                                                        <h5 style="color: black;">VIEW no.3</h5>
+                                                        <p style="color: black;">Thermal reactor</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100 img-thumbnail" src="img/sp/prod-Inic/inc4c.jpg" alt="Four slide">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <div style="background: #ffffff40;padding-top: 1rem;padding-bottom: 0.1rem;">
+                                                        <h5 style="color: black;">VIEW no.4</h5>
+                                                        <p style="color: black;">Fireplace</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100 img-thumbnail" src="img/sp/prod-Inic/inc5c.jpg" alt="Five slide">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <div style="background: #ffffff40;padding-top: 1rem;padding-bottom: 0.1rem;">
+                                                        <h5 style="color: black;">VIEW no.5</h5>
+                                                        <p style="color: black;">Burner Model E&M50</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100 img-thumbnail" src="img/sp/prod-Inic/inc6c.jpg" alt="Six slide">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <div style="background: #ffffff40;padding-top: 1rem;padding-bottom: 0.1rem;">
+                                                        <h5 style="color: black;">VIEW no.6</h5>
+                                                        <p style="color: black;">Burner Model E&M70</p>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100 img-thumbnail" src="img/sp/prod-Inic/inc7c.jpg" alt="Seven slide">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <div style="background: #ffffff40;padding-top: 1rem;padding-bottom: 0.1rem;">
+                                                        <h5 style="color: black;">VIEW no.7</h5>
+                                                        <p style="color: black;">Thermocouple model EM 50 Type K <br>
+                                                        (range from 0 to 1150 ⁰C)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100 img-thumbnail" src="img/sp/prod-Inic/inc8c.jpg" alt="eight slide">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <div style="background: #ffffff40;padding-top: 1rem;padding-bottom: 0.1rem;">
+                                                        <h5 style="color: black;">VIEW no.8</h5>
+                                                        <p style="color: black;">Fan Motor Group <br>
+                                                        (SODECA brand model CMP 820 2T)</p>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100 img-thumbnail" src="img/sp/prod-Inic/inc9c.jpg" alt="Nine slide">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <div style="background: #ffffff40;padding-top: 1rem;padding-bottom: 0.1rem;">
+                                                        <h5 style="color: black;">VIEW no.9</h5>
+                                                        <p style="color: black;">Electrical and Control Panel</p>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+
+                                            </div>
+                                            
+                                            <a class="carousel-control-prev" href="#carouselIncineradores" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                            </a>
+
+                                            <a class="carousel-control-next" href="#carouselIncineradores" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Detalle de la oferta del producto -->
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                                        
+                                        <div class="card">
+                                            <div class="card-header card-header-custom">
+                                                <div class="row">
+                                                    <!--<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                                        <span class="badge badge-light">AHORA</span> desde
+                                                        <h2 class="card-title line-h-c ct2" style="margin-top: 0.7rem;"><span class="value-cup">$180 000</span><span> cup</span></h2>
+                                                        <h2 class="card-title line-h-c2"> <span class="value-usd">$80 000 usd</span></h2>
+                                                    </div>-->
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                                        
+                                                        <p class="p-c-m" style="margin-bottom:0rem;"> 
+                                                            INCINERATORS FOR<br>
+                                                            <span class="f-text">SOLID WASTE</span>
+                                                        </p> 
+                                                        <p class="p-c-m" style="margin-bottom:0rem;">
+                                                            <h3 class="card-title"><span class="style4">50 y 200 KG</span></h3>
+                                                        </p>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h3 class="card-title" style="font-size: 1.5rem;"><span class="fas fa-angle-double-right fa-lg"></span> WE MANUFACTURE OTHER <strong style="font-weight: bold; color: #c5452e;">TYPES </strong>OF INCINERATORS <span class="fas fa-angle-double-left fa-lg"></span></h3>
+                                                <h4 class="card-title" style="color: #2b2b2b; font-size: 1.2rem;">Incinerators that use the method of: <strong style="font-weight: bold; color:#c5452e;"> Alkaline Hydrolysis and Hydroclave</strong>.</h4>
+                                            </div>
+                                        </div>
+
+                                        <div class="card" style="border:0px; background-color: #f7f7f7c7;">
+                                            <div class="card-body" style="padding-bottom: 7px;">
+
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 style6">
+                                                    <h5 class="style2"><span class="fas fa-check-circle fa-lg"></span> Low consumption of energy carriers.</h5>
+                                                    </div>
+            
+                                                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 style6">
+                                                    <h5 class="style2"><span class="fas fa-check-circle fa-lg ico-list-s-color"></span> <strong style="font-weight: bold;">1 year</strong> warranty.</h5>
+                                                    </div>
+
+                                                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 style6">
+                                                        <h5 class="style2"><span class="fas fa-check-circle fa-lg"></span> Semi-ecological product with double chamber.</h5>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                        
+                                        <ul class="nav nav-tabs" id="td-info" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="tecnicalDetail" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" style="padding-bottom: 4px; margin-bottom: 7px;">TECHNICAL DETAILS</a>
+                                            </li>
+                                            
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                                <div class="jumbotron" style="background-color: #e1e1e1;">
+                                                    <p class="lead">
+                                                        
+                                                        <span class="display-55"><span class="fas fa-chevron-circle-right"></span> #Automatic temperature control and access to the chamber where the waste for incineration is deposited.</span><br>
+                                                        <span class="display-55"><span class="fas fa-chevron-circle-right ico-list-s-color"></span> #Emission of transparent and odorless gases into the atmosphere with an oxygen content greater than 6%.</span><br>
+                                                        <span class="display-55"><span class="fas fa-chevron-circle-right"></span> #Permanence time of the gases in the post-combustion of <strong style="font-weight: bold; color: #c5452e;">2-3</strong> seconds.</span></span><br>
+                                                        
+                                                    </p>  
+                                                </div>
+
+                                            </div>
+                                            
+                                        </div>
+
+                                        
+
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <!-- no.2 -->
+                                <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                            <h4 class="card-title m-c-sp" style="margin-bottom: 7px;">Producto no.2 <i class="fa fa-chart-pie fa-flip-horizontal fa-lg"></i> <strong>VERSAT SARASOLA</strong></h4>
+                                            <p class="p-d" style="line-height: 0.2; padding-bottom: 7px;">
+                                                <span class="rating-c-sp" style="display:none;">
+                                                    <span class="icon-star eval-size-star-sp eval-color-star-sp "></span>
+                                                    <span class="icon-star eval-size-star-sp eval-color-star-sp "></span>
+                                                    <span class="icon-star eval-size-star-sp eval-color-star-sp "></span>
+                                                    <span class="icon-star eval-size-star-sp eval-color-star-sp "></span>
+                                                    <span class="icon-star-half-empty eval-size-star-sp eval-color-star-sp"></span>
+                                                    <span class="eval-size-sp"> (4.9)</span>
+                                                </span><br>
+                                                <a style="text-decoration: none; line-height: 2.5;" href="descargar.php?archivo=InfoPromo-ACINOX-Versat.pdf"><small class="text-muted"><span class="fas fa-file-pdf fa-2x"></span> <span class="customText">DOWNLOAD | <span style="color:black ;"><strong>VERSAT Info</strong></span></span></small> <small class="text-muted"></small></a>
+                                                <small class="text-muted"><em>(Available <strong style="color:gray;">ONLY</strong> in Spanish)</em></small>
+                                            </p>
+                                        </div>
+                                </div>
+
+                                <!-- Info de contacto -->
+                                <div class="card f">
+                                    <div class="card-body info-custom">
+
+                                        <div class="row">
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                                <h5 class="card-title" style="margin-bottom: 0px; font-weight: bold;"><span class="fas fa-exclamation-triangle ico-list-s-color"></span> CONTACT INFORMATION</h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                                <p class="card-text lead1 text-justify" style="margin-bottom: 7px;">To request information or contract services of <STRONG>INFORMATICS</STRONG> do it through this contact.</p>
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="row">
+    
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                                <h5 class="card-title" style="font-weight: 500;">Computer Science Specialist (EP)</h5>
+                                                <h6 class="card-subtitle mb-2 text-muted">Ing. Amaury Valdez Jiménez</h6>
+                                            </div>
+    
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                                <p class="card-text">
+                                                    <span class="fas fa-phone"></span> (+53) 59995813 <br>
+                                                    <span class="fas fa-phone" style="color: transparent;"></span> (+53) 76822746 <br>
+                                                    </span><span class="fas fa-envelope"></span> <span class="email-t-s">amaury@acingeconst.co.cu</span>
+                                                </p>
+                                            </div>
+    
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- Detalle de la oferta del producto -->
+                                <div class="row f2">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+
+                                            <div id="carouselVersat" class="carousel slide" data-ride="carousel" data-interval="0">
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#carouselVersat" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#carouselVersat" data-slide-to="1"></li>
+                                                    <li data-target="#carouselVersat" data-slide-to="2"></li>
+                                                </ol>
+                                                <div class="carousel-inner">
+    
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100 img-thumbnail" src="img/sp/prod-Versat/versat1.jpg" alt="First slide">
+                                                    <div class="carousel-caption d-none d-md-block">
+                                                        <div style="background: #ffffff40;padding-top: 1rem;padding-bottom: 0.1rem;">
+                                                            <h5 style="color: black;;">VIEW no.1</h5>
+                                                            <p style="color: black;;">Comprehensive capital management</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100 img-thumbnail" src="img/sp/prod-Versat/versat2.jpg" alt="Second slide">
+                                                    <div class="carousel-caption d-none d-md-block">
+                                                        <div style="background: #ffffff40;padding-top: 1rem;padding-bottom: 0.1rem;">
+                                                            <h5 style="color: black;;">VIEW no.2</h5>
+                                                            <p style="color: black;;">Multiple outlets</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100 img-thumbnail" src="img/sp/prod-Versat/versat3.jpg" alt="Third slide">
+                                                    <div class="carousel-caption d-none d-md-block">
+                                                        <div style="background: #ffffff40;padding-top: 1rem;padding-bottom: 0.1rem;">
+                                                            <h5 style="color: black;;">VIEW no.3</h5>
+                                                            <p style="color: black;;">Real-time and accurate information</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+    
+                                                
+                                                </div>
+                                                
+                                                <a class="carousel-control-prev" href="#carouselVersat" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                                </a>
+    
+                                                <a class="carousel-control-next" href="#carouselVersat" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                                </a>
+    
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                            <div class="card">
+                                                <div class="card-header card-header-custom">
+                                                    <div class="row">
+                                                        <!--<div class="col-12 col-sm-6 col-md-6 col-lg-12 col-xl-6">
+                                                            <p class="card-t-c"><span class="badge badge-light">AHORA</span> hasta</p>
+                                                            <h2 class="card-title line-h-c ct2" style="margin-top: 0.3rem;"><span class="value-cup">$36 120</span><span> cup</span></h2>
+                                                        </div>-->
+                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                                            <p class="p-c-m" style="margin-bottom:0rem;"> 
+                                                                ACCOUNTING SYSTEM v2.9
+                                                            </p> 
+                                                            <h4 class="card-title"><span class="style4" style="font-size: 1.4rem;">VERSAT SARASOLA</span></h4>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h3 class="card-title"><span class="fas fa-angle-double-right fa-lg"></span> INCLUDED IN THE <strong style="font-weight: bold; color: #c5452e;">PRICE</strong> <span class="fas fa-angle-double-left fa-lg"></span></h3>
+                                                    <h5 class="style2"> The installation and <strong style="font-weight: bold; color:#c5452e;">deployment process</strong></h5>
+
+                                                    <hr style="margin-top: 0.9rem; margin-bottom: 0.7rem;">
+                                                    <a style="text-decoration: none;" href="descargar.php?archivo=INFO-VERSAT_v2.9.pdf"><small class="text-muted"><span class="fas fa-file-pdf fa-2x"></span> <span class="customText">Version 2.9 | Compilation 201028</span></small> <small class="text-muted"></small></a>
+                                                    <small class="text-muted"><em>(Available <strong style="color:#2b2b2b;">ONLY</strong> in Spanish)</em></small>
+                                                </div>
+                                            </div>
+                                            <div class="card" style="border:0px; background-color: #f7f7f7c7;">
+                                                <div class="card-body" style="padding-bottom: 7px;">
+    
+                                                    <div class="row">
+                                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 style6">
+                                                        <h5 class="style2"><span class="fas fa-check-circle fa-lg"></span> Versatility</h5>
+                                                        </div>
+                
+                                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 style6">
+                                                        <h5 class="style2"><span class="fas fa-check-circle fa-lg ico-list-s-color"></span> <strong style="font-weight: bold;">Efficiency</strong> </h5>
+                                                        </div>
+    
+                                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 style6">
+                                                            <h5 class="style2"><span class="fas fa-check-circle fa-lg"></span> Security</h5>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+                                        <span class="badge badge-dark style5" style="margin-bottom: 7px;">MINIMUM REQUIREMENTS</span>
+
+                                        <div class="table-responsive">
+                                                <table id="tab1" class="table listProd">
+                                                    <thead>
+                                                    <tr>
+                                                        <th scope="col"><span class="w-cell-custom0" style="font-weight: bold;">v. SQL</span></th>
+                                                        <th scope="col"><span class="w-cell-custom1x" style="font-weight: bold;">Environment/Operating system</span></th>
+                                                        <th scope="col"><span class="w-cell-custom3" style="font-weight: bold;">CPU/RAM/HD</span></th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <th scope="row">2012</th>
+                                                        <td> <span class="display-51x"><strong>SERVER</strong> / Windows Server 2012 (x86/x64) </span></td>
+                                                        <td> <span class="display-51x">1.0 Ghz / 2 GB / 40 GB</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">.</th>
+                                                        <td> <span class="display-51x"><strong>CLIENT</strong> / Windows 8, 8.1 (x86/x64)</span></td>
+                                                        <td> <span class="display-51x">1.0 Ghz / 1 GB / 10 GB</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2017 <span class="badge badge-danger"><span class="b-fc">¡NEW!</span></th>
+                                                        <td> <span class="display-51x"><strong>SERVER</strong> / Windows Server 2016 (x64)  </span></td>
+                                                        <td> <span class="display-51x">3.0 Ghz / 8 GB / 40 GB</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">.</th>
+                                                        <td> <span class="display-51x"><strong>CLIENT</strong> / Windows 10 (x64)</span></td>
+                                                        <td> <span class="display-51x">2.0 Ghz / 4 GB / 10 GB</span></td>
+                                                        
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                    </div>
+
+                    <div><span class="badge badge-dark t1-separate" style="background-color: #2b2b2b;">PROMOTION</span> </div>
+                    <span><span class="style_header21 promo-t1">CATALOG OF PRODUCTS AND SERVICES</span></span>
+
+                </div>
+
+                <hr style="border: 0.5px dashed #c6c6c6;">
+
+                <div class="container" style="margin-top: 15px;">
+
+                    <!-- Promocion del Catalogo de Productos -->
+                    <div id="Catalogue" class="card style11">
+                        <div class="card-body">
+
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                        <img src="img/sp/promoAPK2-EN.png" class="img-fluid img-w-c mx-auto style18 shw2" alt="Responsive Promo .apk">
+                                        <img src="img/sp/promoAPK3-EN.png" class="img-fluid img-w-c mx-auto style18 shw3" alt="Responsive Promo .apk">
+                                        <img src="img/sp/promoAPK4-EN.png" class="img-fluid img-w-c mx-auto style18 shw4" alt="Responsive Promo .apk">
+                                    </div>
+                                </div>
+
+                                <div class="row style-space">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                                        <img src="img/sp/PromoCatalogo-EN.jpg" class="img-fluid img-w-c mx-auto style18 shw2" alt="Promo CATALOGUE">
+                                        <img src="img/sp/PromoCatalogo-EN.jpg" class="img-fluid img-w-c mx-auto style18 shw3" alt="Promo CATALOGUE">
+                                        <img src="img/sp/PromoCatalogo2-EN.jpg" class="img-fluid img-w-c mx-auto style18 shw4" alt="Promo CATALOGUE">
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+
+                                        <div class="row">
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                                <div class="jumbotron jumbotron-fluid style14">
+                                                    <div class="container" style="padding-left: 10px;">
+                                                      <h1 class="display-5 ico-list-s-color style13">Complete and updated collection</h1>
+                                                      <h4><span class="badge badge-secondary">DEAR CUSTOMER</span></h4>
+                                                      <p class="lead text-justify">
+                                                        Our entire range of services and products made available to our customers.<br>
+                                                      </p>
+                                                      <p class="text-center"><strong>WE WORK THINKING OF YOU</strong></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+
+                                                <div class="card style19">
+                                                    <div class="card-body">
+                                                      <!--<h1 class="card-title style15-1" style="line-height: 0.7;">2021</h1>-->
+                                                      <h5 class="card-title ico-list-s-color"><span class="fas fa-book fa-lg"></span> Printable version</h5>
+                                                      <p class="card-text style15">To print: <span class="style16">16 pages</span></p>
+                                                      <p class="card-text">Format: <span class="style16">.PDF File</span></p>
+                                                      <a href="descargar.php?archivo=ACINOX-ING-Catalogo-Servicios-Productos.pdf" class="btn btn-outline-dark btn-sm style17"><span class="fas fa-file-pdf fa-lg"></span> DOWNLOAD</a> 
+                                                      <p style="padding-top: 7px;">
+                                                          <small class="text-muted"><em>(Available <strong style="color:#2b2b2b;">ONLY</strong> in Spanish)</em></small>
+                                                      </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                      <!--<img src="img/iconos/logoAPK.png" class="img-fluid" style="margin-bottom:10px;" alt="Responsive image">   -->
+                                                      <h5 class="card-title ico-list-s-color"><span class="fab fa-android fa-lg"></span> Mobile app</h5>
+                                                      <p class="card-text style15">Size: <span class="style16">8 MB</span></p>
+                                                      <p class="card-text">Format: <span class="style16">.APK File</span></p>
+                                                      <a href="descargar2.php?archivo=CATÁLOGO_AI_2021_2_1.0.apk" class="btn btn-outline-dark btn-sm style17"><span class="fas fa-file-pdf fa-lg"></span> DOWNLOAD</a>
+                                                      <p style="padding-top: 7px;">
+                                                        <small class="text-muted"><em>(Available <strong style="color:#2b2b2b;">ONLY</strong> in Spanish)</em></small>
+                                                      </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+                                        <div id="tab1" class="table-responsive">
+                                            <table class="table table-striped style20">
+                                                <thead>
+                                                  <tr>
+                                                    <th class="text-center" scope="col">no.</th>
+                                                    <th scope="col"><span class="w-cell-custom1"><span class="badge badge-dark style22">Services</span></span></th>
+                                                    <th scope="col"><span class="w-cell-custom2">Collection</span></th>
+                                                    <th class="text-center" scope="col"><span class="w-cell-custom3">Download</span></th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <th class="text-center" scope="row">1</th>
+                                                    <td class="style-text-c">UEB services. Civil and Refractory Works.</td>
+                                                    <td class="style-text-c" style="font-size: 0.97rem;">Updated <span class="ico-list-s-color style13">edition</span></td>
+                                                    <td class="align-middle text-center">
+                                                        <a style="text-decoration: none;" href="descargar.php?archivo=InfoPromo-ACINOX-Obras.pdf">
+                                                            <span class="fas fa-file-pdf fa-lg" style="color:#2b2b2b;"></span> 
+                                                            <small class="text-muted"><em>(<strong style="color:#2b2b2b;">ONLY</strong> in Spanish)</em></small>
+                                                        </a>
+
+                                                        
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th class="text-center" scope="row">2</th>
+                                                    <td class="style-text-c">UEB services. Engineering</td>
+                                                    <td class="style-text-c" style="font-size: 0.97rem;">Updated <span class="ico-list-s-color style13">edition</span></td>
+                                                    <td class="align-middle text-center">
+                                                        <a style="text-decoration: none;" href="descargar.php?archivo=InfoPromo-ACINOX-Ingenieria.pdf">
+                                                            <span class="fas fa-file-pdf fa-lg" style="color:#2b2b2b;"></span> 
+                                                            <small class="text-muted"><em>(<strong style="color:#2b2b2b;">ONLY</strong> in Spanish)</em></small>
+                                                        </a>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th class="text-center" scope="row">3</th>
+                                                    <td class="style-text-c">UEB services. Metallic structures.</td>
+                                                    <td class="style-text-c" style="font-size: 0.97rem;">Updated <span class="ico-list-s-color style13">edition</span></td>
+                                                    <td class="align-middle text-center">
+                                                        <a style="text-decoration: none;" href="descargar.php?archivo=InfoPromo-ACINOX-Estructuras.pdf">
+                                                            <span class="fas fa-file-pdf fa-lg" style="color:#2b2b2b;"></span> 
+                                                            <small class="text-muted"><em>(<strong style="color:#2b2b2b;">ONLY</strong> in Spanish)</em></small>
+                                                        </a>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th class="text-center" scope="col" style="color: transparent;">#</th>
+                                                    <th class="align-middle" scope="col"><span class="badge badge-danger style22">Products</span></th>
+                                                    <th scope="col" style="color: transparent;">#</th>
+                                                    <th class="text-center" scope="col" style="color: transparent;">#</th>
+                                                  </tr>
+                                                  <tr>
+                                                    <th class="text-center" scope="row">4</th>
+                                                    <td class="style-text-c">INCINERATORS for multiple uses</td>
+                                                    <td class="style-text-c" style="font-size: 0.97rem;">Updated <span class="ico-list-s-color style13">edition</span></td>
+                                                    <td class="align-middle text-center">
+                                                        <a style="text-decoration: none;" href="descargar.php?archivo=InfoPromo-ACINOX-Incinerador.pdf">
+                                                            <span class="fas fa-file-pdf fa-lg" style="color:#2b2b2b;"></span> 
+                                                            <small class="text-muted"><em>(<strong style="color:#2b2b2b;">ONLY</strong> in Spanish)</em></small>
+                                                        </a>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th class="text-center" scope="row">5</th>
+                                                    <td class="style-text-c">Accounting system VERSAT SARASOLA</td>
+                                                    <td class="style-text-c" style="font-size: 0.97rem;">Updated <span class="ico-list-s-color style13">edition</span></td>
+                                                    <td class="align-middle text-center">
+                                                        <a style="text-decoration: none;" href="descargar.php?archivo=InfoPromo-ACINOX-Versat.pdf">
+                                                            <span class="fas fa-file-pdf fa-lg" style="color:#2b2b2b;"></span> 
+                                                            <small class="text-muted"><em>(<strong style="color:#2b2b2b;">ONLY</strong> in Spanish)</em></small>
+                                                        </a>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </div>
+                                </div> 
+
+                        </div>
+                    </div>
+                        
+                </div>
+
+            </section>
+
+        </div>
+
+        <footer class="footer minWidth-Standar-footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex align-items-center justify-content-center">
+                        <div class="">
+                            <div class="d-flex justify-content-center align-items-center add-top">
+                                <div class="inside-span text-custom4">
+                                    <span class="text-custom3"><a href="preguntas">FAQs</a></span>
+                                </div>
+                                <p class="text-color text-custom1"><a href="questions"><span class="text-custom6" style="margin-right: 1px;"></span>FREQUENT QUESTIONS<span class="text-custom6" style="margin-left: 1px;">?</span><br> <span class="text-custom7"><a href="questions">(click here)</a></span>  <i class="fas fa-mouse-pointer fa-lg"></i></a></p>
+    
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 d-flex align-items-center justify-content-center">
+                        <div class="d-flex justify-content-center align-items-center">
+
+                            <div id="sfooterElements" class="row">
+                                <div class="col-12 col-sm-12 col-md-3 col-lg-2 col-xl-2 d-flex justify-content-center align-items-center">
+                                    <img src="img/iconos/marca-pais.png" class="mark-country text-custom2 cft2" alt="Country Brand">
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-9 col-lg-10 col-xl-10 d-flex justify-content-center align-items-center">
+                                    <p class="text-color text-custom2 cft">Copyright © 2022. All rights reserved.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+  
+    </div>
+
+    <!-- JS Generales -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1-js/bootstrap.min.js"></script>
+
+    <!-- Para Galería de Imágenes-->
+    <script src="js/jquery.fancybox.min.js "></script>
+
+    <!-- Este fichero se utiliza para vincularlo con animate.css para 
+    activar las animaciones asignadas a los distintos elementos de la 
+    página en la medida que hacemos scroll y nos posicionamos encima de ellos -->
+    <script src="js/wow.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+
+    <script>
+
+        $(document).ready(function() {
+
+            //----------------------------------------//
+            /* Btns Flotantes (CHATs) Redes Sociales  */
+            //----------------------------------------//
+
+            // variable para determinar estado de BtnUp
+            var btn_visible = false;
+             
+            // Ocultar/Mostrar Btn stickyBtnUP
+            $(window).on('scroll', function () { // Evento de Scroll (BtnUp --> Botón subir)
+
+             /* Validamos Si al dar scroll ya estamos a la altura de la sección que 
+                definimos, a partir de la cual se debe 
+                mostrar el BtnUP */
+                
+                // Si ya llegamos al limite fijado y esta oculto lo mostramos
+                if (($(window).scrollTop() > ($("#Contract").offset().top-150)) && (btn_visible == false)){ 
+                        $('#id_stickyBtnUP').fadeIn(500);
+                        btn_visible = true;
+                } 
+                // lo contrario
+                else {
+
+                    if (($(window).scrollTop() < ($("#Contract").offset().top-150)) && (btn_visible == true)){ 
+                        $('#id_stickyBtnUP').fadeOut(500);
+                        btn_visible = false;
+                    } 
+                }
+
+            });
+
+            // popover con Información para iniciar chat de Whatsapp
+            $('#stickyBtn-WSP').popover({
+                html: true,
+                content:'<div id="popWSP"><div class="card2"><div class="card-body-p2 card-body-p3_w"><h5 class="card-title-sticky"><span class="fab fa-whatsapp fa-lg"></span> Contact Us</h5><p class="lead">from <strong class="strongclass">9:00am</strong> to <strong class="strongclass">3:00pm</strong><br> time of Cuba</p></div><div class="card-body-p3"><div class="row"><div class="col-6 stickyPanel-custom-col"><div class="text-center"><img class="card-img-top modal-img-resize-small img-sizeWSP_Pop" src="img/team/detalle/CD5.png" alt="Development Director"></div></div><div class="col-6 stickyPanel-custom-col"><p class="card-title-sticky2">Cares for you:<br> <strong>Leydis Luis Baluja</strong> </p><p class="card-text"><small class="text-muted-sticky">Development Director</small></p><div class="stickyPanel-Btn-send"><a id="btnFloatSendSN" href="https://api.whatsapp.com/send?phone=5352099967&amp;text=Hola!&nbsp;necesito&nbsp;ayuda?" target="_blank" class="btn btn-sm btn-outline-success size-text-btn-send"><span class="fas fa-paper-plane"></span> Start Chat</a></div></div></div></div></div></div>'
+            });
+
+            // popover con Información para iniciar chat de Messenger
+            $('#stickyBtn-Msg').popover({
+                html: true,
+                content:'<div id="popMSG"><div class="card2"><div class="card-body-p2 card-body-p3_m"><h5 class="card-title-sticky"><span class="fab fa-facebook-messenger fa-lg"></span> Contact Us</h5><p class="lead">from <strong class="strongclass">9:00am</strong> to <strong class="strongclass">3:00pm</strong><br> time of Cuba</p></div><div class="card-body-p3"><div class="row"><div class="col-6 stickyPanel-custom-col"><div class="text-center"><img class="card-img-top modal-img-resize-small img-sizeWSP_Pop" src="img/team/detalle/ml.png" alt="Communication Specialist"></div></div><div class="col-6 stickyPanel-custom-col"><p class="card-title-sticky2">Cares for you:<br> <strong>Leany Fernández</strong> </p><p class="card-text"><small class="text-muted-sticky">Communication Specialist</small></p><div class="stickyPanel-Btn-send"><a id="btnFloatSendSN" href="https://m.me/106126724490241" target="_blank" class="btn btn-sm btn-outline-primary size-text-btn-send"><span class="fas fa-paper-plane"></span> Start Chat</a></div></div></div></div></div></div>'
+            });
+
+            /* Función para ocultar popover Whatsapp */
+            function hide_WindowsSocialNetwork() {
+                return function() {
+                    $('[data-toggle=popover]').each(function () { 
+                        (($(this).popover('hide').data('bs.popover')||{})._activeTrigger||{}).click = false; 
+                    }); 
+                };  
+            }
+            
+            /* Evento onclick sobre un Btns que esta dentro de el popover */
+            $(document).on('click', '#btnFloatSendSN', hide_WindowsSocialNetwork());
+           
+
+
+            /*               FIN Flotantes (CHATs) Redes Sociales                 */
+            //--------------------------------------------------------------------//
+
+            //--------------------------------------------------------------------//
+            // Operaciones con el Menú
+
+            /*---- DETECTAR ROTACION DE PANTALLA -----------------------------------*/
+            // Cuando se rote el móvil Verifico si tiene una orientación "landscape"
+            var mql = window.matchMedia("(orientation: landscape)");
+
+            // Si matchea
+            if(mql.matches) {  
+                
+                /* entonces para una altura de pantalla menor de 480px ejecuto las siguientes acciones: */
+                if (screen.height < 480) {
+                    /* no.1 - Oculto el menú secundario (Informativo) en caso que este visible */
+                    document.getElementById("dropdownMenu2_List").style.display="none";
+                }
+
+                /* entonces para una altura de pantalla menor 0 igual a 480px ejecuto las siguientes acciones: */
+                if (screen.height <= 480) {
+                    /* no.2 - Simulo un click en el body y eso cierra cualquier popover que se encuentre abierto*/
+                    $('#body').click();
+                }
+
+            } 
+
+            // Add a media query change listener
+            mql.addListener(function(m) {
+                if(m.matches) {
+                    if (screen.height < 480) {
+                       /* oculto el menú secundario (Informativo) en caso que este visible */
+                       document.getElementById("dropdownMenu2_List").style.display="none";
+                    }
+
+                    /* entonces para una altura de pantalla menor 0 igual a 480px ejecuto las siguientes acciones: */
+                    if (screen.height <= 480) {
+                        /* no.2 - Simulo un click en el body y eso cierra cualquier popover que se encuentre abierto*/
+                        $('#body').click();
+                    }
+                }
+            });
+
+            /*---- FIN DETECTAR ROTACION DE PANTALLA -----------------------------------*/
+
+            /* Abro y cierro el navbar */
+            $('.second-button').on('click', function() {
+
+                // Verifico si el dropDown (de los 3 puntos) esta abierto
+                var isVisible2 = $("#dropdownMenu2_List").is(":visible ");
+                if (isVisible2) {
+
+                    /* quita la clase "show " del dropdown pero
+                    no basta para que desaparesca la lista de elementos 
+                    porque la propiedad display sigue con valor "block " 
+                    (podemos presindir de esta liena de código pero preferí 
+                    dejarla con fines didacticos)*/
+                    //$('#dropdownMenu2-List').hide(); 
+
+                    /* esta linea de código es quien realmente hace desaparecer a la lista de elementos */
+                    $('#dropdownMenu2_List').css("display ", "none ");
+                }
+
+                /* Oculto la lista de elementos del Dropdown que PUDIERA estar abierto */
+                /*$('#dropdownMenu2_List').hide();*/
+
+                // abro y cierro el navbar alternando entre hamburger y close icons
+                $('.animated-icon2').toggleClass('open');
+
+                // Oculto el btn de idioma al desplegar el navbar y lo vuelvo a mostrar al cerrarlo
+                $('.btn_language').toggle();
+
+            });
+
+            // Cierro el navbar al hacer click en cualquiera de sus links
+            $('.navbar-collapse a').click(function() {
+                $(".navbar-collapse ").collapse('hide');
+                $('.animated-icon2').toggleClass('open');
+                // Oculto el btn de idioma al desplegar el navbar y lo vuelvo a mostrar al cerrarlo
+                $('.btn_language').toggle();
+            });
+
+            // Abro y cierro el dropDown2
+            $("#dropdownMenu2").click(function() {
+
+                // Al hacer Click en el Dropdown pregunto si el navbar esta collapsado si es (TRUE) lo cierro
+                if ($(".navbar-collapse ").hasClass('show')) {
+                    $(".navbar-collapse ").collapse('hide');
+                    $('.animated-icon2').toggleClass('open');
+                    // Oculto el btn de idioma al desplegar el navbar y lo vuelvo a mostrar al cerrarlo
+                    $('.btn_language').toggle();
+                }
+
+                $('#dropdownMenu2_List').slideToggle(500);
+
+            });
+
+            // Abro y cierro el dropDown1 haciendo click encima
+            $("#dropdownMenu1").click(function() {
+
+                // Verifico si el dropDown11 y el 3 están abiertos
+                var isVisible = $("#dropd_List3").is(":visible");
+                var isVisible2 = $("#dropdownMenu3-List").is(":visible");
+
+                if ((isVisible) || (isVisible2)) {
+                    
+                    if (isVisible) {
+                        $("#dropd-pages-Icon3").removeClass("fa-chevron-up");
+                        $("#dropd-pages-Icon3").addClass("fa-chevron-down");
+                        $("#dropd_List3").fadeToggle(300);
+                    }
+
+                    if (isVisible2) {
+                        $("#dropdownMenu3-Icon").removeClass("fa-chevron-circle-down");
+                        $("#dropdownMenu3-Icon").addClass("fa-chevron-circle-left");
+                        $("#dropdownMenu3-List").fadeToggle(300);
+                    }
+                    
+                }
+
+                var button = $(this).find('i');
+                button.toggleClass('fa-chevron-up').toggleClass('fa-chevron-down');
+                $('#dropdownMenu1-List').slideToggle(500);
+            });
+
+            // Abro y cierro el dropDown11 haciendo click encima
+            $("#dropdownMenu113").click(function() {
+
+                // Verifico si el dropDown1 y el 3 están abiertos
+                var isVisible = $("#dropdownMenu1-List").is(":visible");
+                var isVisible2 = $("#dropdownMenu3-List").is(":visible");
+
+                if ((isVisible) || (isVisible2)) {
+                    
+                    if (isVisible) {
+                        $("#dropdownMenu1-Icon").removeClass("fa-chevron-up");
+                        $("#dropdownMenu1-Icon").addClass("fa-chevron-down");
+                        $("#dropdownMenu1-List").fadeToggle(300);
+                    }
+
+                    if (isVisible2) {
+                        $("#dropdownMenu3-Icon").removeClass("fa-chevron-circle-down");
+                        $("#dropdownMenu3-Icon").addClass("fa-chevron-circle-left");
+                        $("#dropdownMenu3-List").fadeToggle(300);
+                    }
+                    
+                }
+
+                var button = $(this).find('i');
+                button.toggleClass('fa-chevron-up').toggleClass('fa-chevron-down');
+                $('#dropd_List3').slideToggle(500);
+
+                $('.btn_language').toggle(); //PARCHE PARA QUE NO SE OCULTE LA BARRA DE CAMBIO DE IDIOMA
+            });
+
+            // Abro y cierro el dropDown3 haciendo click encima
+            $("#dropdownMenu3").click(function() {
+
+                // Verifico si el dropDown1 y el 11 están abiertos
+                var isVisible = $("#dropdownMenu1-List").is(":visible");
+                var isVisible2 = $("#dropd_List3").is(":visible");
+
+                if ((isVisible) || (isVisible2)) {
+                    
+                    if (isVisible) {
+                        $("#dropdownMenu1-Icon").removeClass("fa-chevron-up");
+                        $("#dropdownMenu1-Icon").addClass("fa-chevron-down");
+                        $("#dropdownMenu1-List").fadeToggle(300);
+                    }
+
+                    if (isVisible2) {
+                        $("#dropd-pages-Icon3").removeClass("fa-chevron-up");
+                        $("#dropd-pages-Icon3").addClass("fa-chevron-down");
+                        $("#dropd_List3").fadeToggle(300);
+                    }
+                    
+                }
+
+                var button = $(this).find('i');
+                button.toggleClass('fa-chevron-circle-down').toggleClass('fa-chevron-circle-left');
+                $('#dropdownMenu3-List').slideToggle(500);
+            });
+
+            // Cierro los dropDown(s) haciendo click en cualquier parte de la página
+            $(document).click(function() {
+
+                // Verifico si el dropDown1 esta abierto
+                var isVisible = $("#dropdownMenu1-List ").is(":visible ");
+                if (isVisible) {
+                    var button = $(this).find('#dropdownMenu1-Icon');
+                    button.toggleClass('fa-chevron-up').toggleClass('fa-chevron-down');
+                    $("#dropdownMenu1-List ").fadeToggle(300);
+                }
+
+                // Verifico si el dropDown113 esta abierto
+                var isVisible = $("#dropd_List3").is(":visible ");
+                if (isVisible) {
+                    var button = $(this).find('#dropd-pages-Icon3');
+                    button.toggleClass('fa-chevron-up').toggleClass('fa-chevron-down');
+                    $("#dropd_List3").fadeToggle(300);
+                }
+
+                // Verifico si el dropDown2 esta abierto
+                var isVisible = $("#dropdownMenu2_List").is(":visible ");
+                if (isVisible) {
+                    $("#dropdownMenu2_List").fadeToggle(300);
+                }
+
+                // Verifico si el dropDown3 esta abierto
+                var isVisible = $("#dropdownMenu3-List ").is(":visible ");
+                if (isVisible) {
+                    var button = $(this).find('#dropdownMenu3-Icon');
+                    button.toggleClass('fa-chevron-circle-down').toggleClass('fa-chevron-circle-left');
+                    $("#dropdownMenu3-List ").fadeToggle(300);
+                }
+
+            });
+
+            
+            // FIN Operaciones con el Menú
+            //---------------------------------------------------------------------//
+
+            //-----------------------------------------------------------------------------------//
+
+            // Para mostrar tooltip de botones flotantes
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip({
+                 trigger : 'hover'
+                });
+            });
+
+            // Ocultar el tooltip que se muestra pasado un tiempo (BOTONES FLOTANTES)
+            $('#id_stickyBtnTAB1').on('shown.bs.tooltip', function () {
+                setTimeout(function () {
+                  //get a reference to the tooltip and hide it.
+                  $('[data-toggle="tooltip"]').tooltip('hide');
+                }, 2000)
+            });
+
+            $('#id_stickyBtnTAB2').on('shown.bs.tooltip', function () {
+                setTimeout(function () {
+                  //get a reference to the tooltip and hide it.
+                  $('[data-toggle="tooltip"]').tooltip('hide');
+                }, 2000)
+            });
+
+            $('#id_stickyBtnTAB3').on('shown.bs.tooltip', function () {
+                setTimeout(function () {
+                  //get a reference to the tooltip and hide it.
+                  $('[data-toggle="tooltip"]').tooltip('hide');
+                }, 2000)
+            });
+
+            $('#id_stickyBtnTAB4').on('shown.bs.tooltip', function () {
+                setTimeout(function () {
+                  //get a reference to the tooltip and hide it.
+                  $('[data-toggle="tooltip"]').tooltip('hide');
+                }, 2000)
+            });
+
+            $('#IdTAB1').on('shown.bs.tooltip', function () {
+                setTimeout(function () {
+                  //get a reference to the tooltip and hide it.
+                  $('[data-toggle="tooltip"]').tooltip('hide');
+                }, 2000)
+            });
+
+            $('#IdTAB2').on('shown.bs.tooltip', function () {
+                setTimeout(function () {
+                  //get a reference to the tooltip and hide it.
+                  $('[data-toggle="tooltip"]').tooltip('hide');
+                }, 2000)
+            });
+
+            $('#IdTAB3').on('shown.bs.tooltip', function () {
+                setTimeout(function () {
+                  //get a reference to the tooltip and hide it.
+                  $('[data-toggle="tooltip"]').tooltip('hide');
+                }, 2000)
+            });
+
+            $('#IdTAB4').on('shown.bs.tooltip', function () {
+                setTimeout(function () {
+                  //get a reference to the tooltip and hide it.
+                  $('[data-toggle="tooltip"]').tooltip('hide');
+                }, 2000)
+            });
+
+            $('#MDPage').on('shown.bs.tooltip', function () {
+                setTimeout(function () {
+                  //get a reference to the tooltip and hide it.
+                  $('[data-toggle="tooltip"]').tooltip('hide');
+                }, 2000)
+            });
+
+            /*----------------------------------------------------------------------------------------*/
+            // MENU DROPDOWN NO SE CIERRA AL HACER CLICK ENCIMA
+            // Evitar que al hacer click dentro del menú desplegable del dropdown este se cierre y así
+            // desplazarme por los tab que le incorporé dentro, para que muestren la lista de páginas 
+            // y la información general en las vistas de dispositivos móviles.
+
+            $('#dropdownMenu2_List').on('click', function(event){
+                //The event won't be propagated to the document NODE and 
+                // therefore events delegated to document won't be fired
+                event.stopPropagation();
+            });
+            
+            $('#dropdownMenu2_List > ul > li > a').on('click', function(event){
+                event.stopPropagation();
+                $(this).tab('show');
+            });
+
+            $('#dropdownMenu1-List').on('click', function(event){
+                // The event won't be propagated to the document NODE and 
+                // Therefore events delegated to document won't be fired
+                event.stopPropagation();
+            });
+            
+            $('#dropdownMenu1-List > ul > li > a').on('click', function(event){
+                event.stopPropagation();
+                $(this).tab('show');
+            });
+
+            // FIN--- MENU DROPDOWN NO SE CIERRA AL HACER CLICK ENCIMA
+            /*----------------------------------------------------------------------------------------*/
+
+            
+        });
+
+    </script>
+
+    <script>
+
+        /* Para seleccionar el Tab de servicios o productos que se especifíque */
+        function activaTab(tab){
+           $('#pills-tab a').removeClass('active');
+           $('.nav-pills a[href="#' + tab + '"]').tab('show');
+        };
+        
+    </script>
+
+    <script>
+
+        //-----------------------------------------------------------------//
+        // Desplazamiento por la página al hacer click en diferentes enlaces
+
+        $("#linkm0").click(function() {
+
+            //PARCHE PARA QUE NO SE OCULTE LA BARRA DE CAMBIO DE IDIOMA
+            var isVisible_TEMP = $('.btn_language').is(":visible ");
+            if (isVisible_TEMP==false) {
+
+                $('.btn_language').css("display ", "block ");
+            }
+            else {
+                $('.btn_language').toggle(); 
+            }
+            //FIN ****** PARCHE PARA QUE NO SE OCULTE LA BARRA DE CAMBIO DE IDIOMA
+
+            $('html,body').animate({
+                scrollTop: $("#body").offset().top - ($('#navigation').height() + 7)
+            }, 2000);
+        });
+
+        $("#linkm1").click(function() {
+
+            //PARCHE PARA QUE NO SE OCULTE LA BARRA DE CAMBIO DE IDIOMA
+            var isVisible_TEMP = $('.btn_language').is(":visible ");
+            if (isVisible_TEMP==false) {
+
+                $('.btn_language').css("display ", "block ");
+            }
+            else {
+                $('.btn_language').toggle(); 
+            }
+            //FIN ****** PARCHE PARA QUE NO SE OCULTE LA BARRA DE CAMBIO DE IDIOMA
+
+            $('html,body').animate({
+                scrollTop: $("#Contract").offset().top - ($('#navigation').height() + 7)
+            }, 2000);
+        });
+
+        $("#linkm2").click(function() {
+
+            //PARCHE PARA QUE NO SE OCULTE LA BARRA DE CAMBIO DE IDIOMA
+            var isVisible_TEMP = $('.btn_language').is(":visible ");
+            if (isVisible_TEMP==false) {
+
+                $('.btn_language').css("display ", "block ");
+            }
+            else {
+                $('.btn_language').toggle(); 
+            }
+            //FIN ****** PARCHE PARA QUE NO SE OCULTE LA BARRA DE CAMBIO DE IDIOMA
+
+            $('html,body').animate({
+                scrollTop: $("#detail-services").offset().top - ($('#navigation').height() + 7)
+            }, 2000);
+        });
+
+        $("#linkm3").click(function() {
+
+           //PARCHE PARA QUE NO SE OCULTE LA BARRA DE CAMBIO DE IDIOMA
+           var isVisible_TEMP = $('.btn_language').is(":visible ");
+            if (isVisible_TEMP==false) {
+
+                $('.btn_language').css("display ", "block ");
+            }
+            else {
+                $('.btn_language').toggle(); 
+            }
+            //FIN ****** PARCHE PARA QUE NO SE OCULTE LA BARRA DE CAMBIO DE IDIOMA
+
+            $('html,body').animate({
+                scrollTop: $("#Catalogue").offset().top - ($('#navigation').height() + 90)
+            }, 2000);
+        });
+
+        $("#btn-cat").click(function() {
+            $('html,body').animate({
+                scrollTop: $("#Catalogue").offset().top - ($('#navigation').height() + 90)
+            }, 2000);
+        });
+
+        $("#stickyBtn-UP").click(function() {
+                $('html,body').animate({
+                    scrollTop: $("#body").offset().top - ($('#navigation').height())
+                }, 2000);
+        });
+
+        /* Rango de resolución de pantalla para fijar 
+        el offset().top del desplazamiento que realizan 
+        los btns flotantes de servicios en la página */
+        var cant;
+        if (screen.height >= 768) {
+            cant = 120;
+        }
+        else {
+            cant = 75;
+        }
+
+        $("#stickyBtn-TAB1").click(function() {
+            $('html,body').animate({
+                scrollTop: $("#layer1").offset().top - cant 
+            }, 2000);
+        });
+
+        $("#stickyBtn-TAB2").click(function() {
+            $('html,body').animate({
+                scrollTop: $("#layer1").offset().top - cant
+            }, 2000);
+        });
+
+        $("#stickyBtn-TAB3").click(function() {
+            $('html,body').animate({
+                scrollTop: $("#layer1").offset().top - cant
+            }, 2000);
+        });
+
+        $("#stickyBtn-TAB4").click(function() {
+            $('html,body').animate({
+                scrollTop: $("#layer1").offset().top - cant
+            }, 2000);
+        });
+
+
+        // FIN Desplazamiento por la página al hacer click en diferentes enlaces
+        //---------------------------------------------------------------------//
+
+    </script>
+
+    <script>
+
+        // Esta función Chequea si existe algún popover abierto al dar click en cualquier parte de la página 
+        // (exceptuando que se de click dentro de alguno que este abierto ya) y lo cierra.
+        $('body').on('click', function (e) { 
+            $('[data-toggle=popover]').each(function () { 
+                if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) { 
+                    (($(this).popover('hide').data('bs.popover')||{})._activeTrigger||{}).click = false; 
+                } 
+            }); 
+        }); 
+
+    </script>
+
+    <!-- Codigo que genera facebook para colocar el chat de messenger en la Web-->
+    <script>
+            var chatbox = document.getElementById('fb-customer-chat');
+            chatbox.setAttribute("page_id", "106126724490241");
+            chatbox.setAttribute("attribution", "biz_inbox");
+            window.fbAsyncInit = function() {
+                FB.init({
+                xfbml            : true,
+                version          : 'v10.0'
+                });
+            };
+
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+</body>
+
+</html>
